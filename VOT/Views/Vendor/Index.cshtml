@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+@using VOT.Models;
+
+<h1>Vendors</h1>
+
+  @if (@Model.Count == 0)
+  {
+    <h3>Vender List Emptey</h3>
+  }
+
+  @foreach (Vendor vendor in Model)
+  {
+    <h3><a href='/vendor/@vendor.Id'>@vendor.Name</a></h3>
+  }
+  <br>
+  <form action="/vendor/delete" method="post">
+    <button class="btn" type="submit">Clear All</button>
+  </form>
