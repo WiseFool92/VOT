@@ -3,17 +3,19 @@
 }
 @using VOT.Models;
 
-<h3>Vendor orders list:</h3>
+<div class="center">
+  <h3>Vendor orders list:</h3>
 
-<ol>
-  @foreach (var order in @Model["order"])
-  {
-   <li>
-     <a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Description</a>
-   </li>   
-  }
-</ol>
+  <ol>
+    @foreach (var order in @Model["order"])
+    {
+    <li>
+      <a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Description</a>
+    </li>   
+    }
+  </ol>
 
-<p>
-  <a href='/vendor/@Model["vendor"].Id/order/new'>Create & Add an order to a vendor</a>
-</p>
+  <p>
+    <a href='/vendor/@Model["vendor"].Id/order/new'>Create & Add an order to a vendor</a>
+  </p>
+</div>

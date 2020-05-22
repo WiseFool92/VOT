@@ -3,10 +3,11 @@
 }
 @using VOT.Models;
 
-<h1>Order Details:</h1>
-
-<h2>@Model["order"].Description</h2>
-<h3>Vendor: @Model["vendor"].Name</h3>
-<img src='@Model["order"].ImgURL'>
-<br>
-<a href='/vendor/@Model["vendor"].Id/order/new'>Create another vendor</a>
+<h1 id="type">Order Details:</h1>
+<div>
+  <h2>@Model["order"].Description</h2>
+  <h3>Vendor: @Model["vendor"].Name</h3>
+  <img src='@Model["order"].ImgURL'>
+  <br>
+  <a href='/vendor/@Model["vendor"].Id/order/new'>Create another vendor</a>
+</div>

@@ -3,9 +3,9 @@
 }
 @using VOT.Models;
 
-<h1>Add an order to @Model.Name</h1>
+<h1 id="type">Add an order to @Model.Name</h1>
 
-<form action="/vendor/@Model.Id/order" method="POST">
+<form action="/vendor/@Model.Id/order" method="POST" class="center">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
   <input id="orderDescription" name="orderDescription" type="text" placeholder="Order Description">
   <br>
