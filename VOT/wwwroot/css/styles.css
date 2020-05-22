@@ -29,21 +29,9 @@ div#navBar {
   border-color: rgba(255,255,255,1);
   transform: scale(1.1);
 }
-/* body {
-  background-color: green;
-  background: linear-gradient(rgba(247, 0, 255, 0.52), rgba(0, 17, 173, 0.274), rgba(167, 0, 144, 0.986));
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
-  display: block;
-  padding: 1%;
-  min-height: 100%;
-  background-attachment: fixed;
-  margin: 0;
-  text-align: center;
-} */
 body {
   background: url(https://images.unsplash.com/photo-1590160061765-a8ee479e9666?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80);
+  /* background: url(https://i2.wp.com/www.pswallpapers.com/wp-content/uploads/2017/02/Skyrim-1080-Main.jpg?resize=768,432&ssl=1); */
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -58,9 +46,6 @@ color: whitesmoke;
   -webkit-text-stroke-width: 2px;
   margin: .5%;
   text-align: center;
-}
-#fluff {
-  padding: 1%;
 }
 .center {
   text-align: center;
@@ -80,8 +65,12 @@ color: whitesmoke;
   margin: 2px;
 }
 .serene {
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
-  background-color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  text-align: top;
+  height: auto;
+  padding: .5%;
 }
