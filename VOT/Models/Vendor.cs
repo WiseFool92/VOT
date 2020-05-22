@@ -5,8 +5,8 @@ namespace VOT.Models
   public class Vendor
   {
     public string Name { get; set; }
-    public string Id { get; }
-    private static List<Vendor> _instances = new List<Vendors> {};
+    public int Id { get; }
+    private static List<Vendor> _instances = new List<Vendor> {};
     public List<Order> Order { get; set; }
 
     public Vendor (string vendorName)

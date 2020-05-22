@@ -5,7 +5,7 @@ using VOT.Models;
 
 namespace VOT.Controllers
 {
-  public class VendorController : Controllers
+  public class VendorController : Controller
   {
     [HttpGet("/vendor")]
     public ActionResult Index ()
@@ -35,8 +35,8 @@ namespace VOT.Controllers
       Order createOrder = new Order(orderDescription, img);
       createVendor.AddOrder(createOrder);
       List<Order> vendorOrder = createVendor.Order;
-      Models.Add("vendor", createVendor);
-      Models.Add("order", vendorOrder);
+      model.Add("vendor", createVendor);
+      model.Add("order", vendorOrder);
       return View("show", model);
     }
 

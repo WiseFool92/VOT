@@ -15,7 +15,7 @@ namespace VOT.Models
       _instances.Add(this);
       Id = _instances.Count;
     }
-    public Order (string description, string ImgURL) // Overload constructor
+    public Order (string description, string imgURL) // Overload constructor
     {
       ImgURL = imgURL;
       Description = description;
